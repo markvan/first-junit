@@ -1,5 +1,6 @@
 package com.company.stack;
 
+
 import java.util.EmptyStackException;
 
 public class Stack {
@@ -11,7 +12,7 @@ public class Stack {
         return this;
     }
 
-    public int pop() {
+    public int pop()  {
         if ( not_empty() ) {
             int ret = head.value();
             head = head.next();
@@ -19,9 +20,8 @@ public class Stack {
         }
         else
             // todo error handling needed
-            //return -999999999 ;
-            throw new EmptyStackException();
-
+            throw  new EmptyStackException();
+            // return -999999999 ;
     }
 
     private boolean not_empty() {

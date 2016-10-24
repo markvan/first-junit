@@ -6,7 +6,11 @@ public class Main {
         Stack stk = new Stack();
         stk.push(2);
         stk.push(888);
-        System.out.println( stk.pop() );
-        System.out.println( stk.pop() );
+        try {
+            System.out.println(stk.pop());
+            System.out.println(stk.pop());
+        } catch (Exception e) {
+            // do nothing
+        }
     }
 }
